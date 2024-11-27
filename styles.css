@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#calculator {
+    font-family: arial, sans-serif;
+    max-width: 500px;
+    overflow: hidden;
+}
+
+#display {
+    width: 100%;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: left;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid hsl(0, 0%, 85%);
+    color: hsl(0, 0%, 0%);
+}
+
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
+}
+
+button {
+    width: 80px;
+    height: 80px;
+    border: none;
+    border-radius: 50%;
+    background: hsl(0, 0%, 100%);
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background: hsl(0, 0%, 90%);
+}
+
+button:active {
+    background: hsl(0, 0%, 93%);
+}
+
+.operator-btn {
+    color: hsl(35, 100%, 50%);
+}
+
+.operator-btn:hover {
+    background: hsl(0, 0%, 100%);
+    color: hsl(35, 100%, 65%);
+}
+
+.operator-btn:active {
+    background: hsl(0, 0%, 100%);
+    color: hsl(35, 100%, 75%);
+}
+
+.cal-btn {
+    color: hsl(0, 0%, 100%);
+    background: hsl(35, 100%, 50%);
+}
+
+.cal-btn:hover {
+    background: hsl(35, 100%, 65%);
+}
+
+.cal-btn:active {
+    background: hsl(35, 100%, 75%);
+}
